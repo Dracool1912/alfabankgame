@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <!--
+        <meta name="game-engine-origin" content="http://www.isogenicengine.com">
+        -->
+	<meta http-equiv="X-UA-Compatible" content="IE=9" >
+	<title>М.видео: обучающая игра «Технология продаж»</title>
+        <meta name="description" content="">
+
+        
+        <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/bootstrap/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+
+        
+        <link href="css/angular-ui/angular-ui.css" rel="stylesheet" type="text/css">
+        
+	<!-- MY STYLES -->
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link href="css/intro.css" rel="stylesheet" type="text/css">
+        
+        <style>/*
+            @font-face {
+                    font-family: 'MVideoRegular';
+                    src: url('fonts/MVideo_regular_webkit.eot');
+                    src: 
+                         url('fonts/MVideo_regular_webkit.eot?#iefix') format('embedded-opentype'),
+                         url('fonts/MVideo_regular_webkit.woff') format('woff'),
+                         url('fonts/MVideo_regular_webkit.ttf') format('truetype'),
+                         url('fonts/MVideo_regular_webkit.svg#MVideo-Regular') format('svg');
+                    font-weight: normal;
+                    font-style: normal;
+            }        
+            */
+            body {
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                
+                position: relative;
+                
+                background-color: #fff;
+                
+                font-family: MVideoRegular;
+            }     
+            
+            [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+                display: none !important;
+            }
+        </style>        
+        
+        
+        <script src="js/libs/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+                
+        
+</head>
+<body id="videoRotatorCtrl"  ng-controller="videoRotatorCtrl" class="ng-scope">  
+
+    <div resize class="container ng-cloak" ng-cloak>
+    
+        
+<video  id="video" video-loader="videoNumber" width=1024 height=668 autoplay controls autobuffer style="margin-left: auto; margin-right: auto;" >
+    <!--
+<video  id="video" video-loader="videoNumber"  width=1024 height=668 controls autobuffer style="margin-left: auto; margin-right: auto;" >    
+    <source src="assets/intro/{{videoFile}}.mp4" type='video/mp4' />
+    <source src="assets/intro/{{videoFile}}.webm" type='video/webm' />
+    <source src="assets/intro/{{videoFile}}.ogv" type='video/ogg' />  
+    -->
+    <!--
+    <source src="assets/intro/v_intro.mp4" type='video/mp4' />
+    <source src="assets/intro/v_intro.webm" type='video/webm' />
+    <source src="assets/intro/v_intro.ogv" type='video/ogg' />      
+    -->
+    Ваш обозреватель не поддерживает тэг "video".<br>
+    Если Вы используете Safari попробуйте обновить Safari и QuickTime.
+  
+</video>
+                
+        <!--
+        <div ng-hide="imagesReady" style="top:80px; max-width: 400px; margin-left: auto; margin-right: auto;">
+            <span  >Подождите, загружается ролик...</span>
+            <div class="progress" ng-hide="imagesReady" style="max-width: 400px;">
+                <div class="bar bar-success" style="width: {{imagesLoadedPercent}}%;"></div>
+            </div>        
+        </div>
+
+        <div>
+
+        <div id="rotator" ng-show="imagesReady">
+          <ul>
+            <li ng-repeat="image in images" style="margin-left: auto; margin-right: auto;">
+                <img ng-src="{{image}}" class="localion_background" bn-load="imageLoaded()">
+            </li>      
+          </ul>  
+        </div>    
+
+-->
+       <a href="game.html" class="resume_intro" style="color:#FFFFFF; text-decoration:none">Пропустить</a>
+<!--
+<div href="game.html" class="resume_intro" >
+    <span class="resume_intro_text">Пропустить</span>
+</div>
+-->
+        </div>
+
+
+  <script src="js/libs/jquery/jquery-1.9.1.js"></script>  
+  <script src="js/libs/bootstrap/bootstrap.min.js"></script>
+
+  <script src="js/libs/angular/angular.js"></script>
+  <script src="js/libs/angular-ui/angular-ui.js"></script>
+  <script src="js/libs/angular-ui/angular-ui-ieshiv.min.js"></script>
+  <script src="js/libs/angular/angular-sanitize.js"></script>
+  
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/ngStorage.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+  
+ <!-- <script src="js/main.js"></script> -->
+  <!-- 
+  <script src="gameData/customer.js"></script>
+  <script src="gameData/salesman.js"></script>
+  <script src="gameData/dialog_map.js"></script>
+    -->
+</body>
+</html>
